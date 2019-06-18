@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>PageTile</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Evergreen Theater!</h1>
+     <form id="formOne" action="index.html" method="post">
+      <div class="form-group">
+        <label for="movie">Pick a movie!</label>
+        <select id="movie" name="movie">
+          <option value="1">Avengers</option>
+          <option value="1">Gaurdians of the Galaxy</option>
+          <option value="2">Eat, Pray, Love</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>What Time</h4>
+        <div class="radio">
+          <label>
+            <input class="time" type="radio" name="time" value="2" checked>
+            11:00am
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input class="time"  type="radio" name="time" value="1">
+            5:00pm
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input class="time" type="radio" name="time" value="1">
+            8:00pm
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age">Enter your age</label>
+        <input id="age" type="number" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="students">Are you a student?</label>
+        <input type="checkbox" name="student" value="true">
+      </div>
+      <button type="submit" name="button">Find my ticket!</button>
+     </form>
+     <div class="output"></div>
+    </div>
+  </body>
+</html>
